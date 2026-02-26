@@ -10,4 +10,4 @@ RUN g++ app.cpp -o app
 
 EXPOSE 8080
 
-CMD ["./app"]
+CMD ["sh", "-c", "while true; do ./app; sleep 1; done"]
